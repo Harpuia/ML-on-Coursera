@@ -143,7 +143,7 @@ ylabel('Cost J');
 % not need to be normalized.
 
 x = [1650 3];
-x = (x - mu) ./ sigma;
+x =  
 x = [1 x]
 price = x * theta; 
 
@@ -190,8 +190,7 @@ fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
-x = [1 1650 3];
-price = x * theta;
+price = 0; % You should change this
 
 
 % ============================================================
