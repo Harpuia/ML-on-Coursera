@@ -8,6 +8,7 @@ function [X_poly] = polyFeatures(X, p)
 
 % You need to return the following variables correctly.
 X_poly = zeros(numel(X), p);
+temp = zeros(numel(X), 1);
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Given a vector X, return a matrix X_poly where the p-th 
@@ -15,7 +16,11 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
+for k = 1:p
+    X_poly(:, k) = X .^ k;
+end
+        
+        
 
 
 
